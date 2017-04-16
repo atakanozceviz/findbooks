@@ -1,2 +1,2 @@
-# kitapbul
-Yet another scraper
+# finbooks
+scrape books from web
