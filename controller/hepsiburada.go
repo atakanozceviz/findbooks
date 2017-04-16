@@ -87,6 +87,7 @@ func Hepsiburada(books *model.Books, s string) {
 							Publisher: data.ProductBrands[i],
 							WebSite:   "http://www.hepsiburada.com" + link,
 							Img:       img,
+							Resource:  "Hepsiburada",
 						}
 						//75 = "K" or 72 = "H" Means its a book
 						cat := data.ProductSkus[i][0]

@@ -34,6 +34,7 @@ func Odakitap(books *model.Books, s string) {
 				Img:       "https://www.odakitap.com" + img,
 				Price:     price,
 				WebSite:   website,
+				Resource:  "Odakitap",
 			}
 			model.Add(p, books)
 		}

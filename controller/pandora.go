@@ -39,6 +39,7 @@ func Pandora(books *model.Books, s string) {
 					Img:       "http://www.pandora.com.tr" + img,
 					Price:     price,
 					WebSite:   "http://www.pandora.com.tr" + website,
+					Resource:  "Pandora",
 				}
 				model.Add(p, books)
 			}

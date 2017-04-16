@@ -15,6 +15,7 @@ type Book struct {
 	Img       string `json:"img"`
 	Price     string `json:"price"`
 	WebSite   string `json:"website"`
+	Resource  string `json:"resource"`
 }
 
 type Books []Book
@@ -30,6 +31,7 @@ func Add(b Book, bs *Books) {
 		Img:       b.Img,
 		Price:     b.Price,
 		WebSite:   b.WebSite,
+		Resource:  b.Resource,
 	})
 	lock.Unlock()
 }

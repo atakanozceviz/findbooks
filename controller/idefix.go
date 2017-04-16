@@ -34,6 +34,7 @@ func Idefix(books *model.Books, s string) {
 					Img:       img,
 					Price:     price,
 					WebSite:   "http://www.idefix.com" + website,
+					Resource:  "Idefix",
 				}
 				model.Add(p, books)
 			}
