@@ -20,6 +20,11 @@ type Book struct {
 
 type Books []Book
 
+type Result struct {
+	Books Books   `json:"books"`
+	Avg   float64 `json:"avg"`
+}
+
 var lock sync.Mutex
 
 func Add(b Book, bs *Books) {
@@ -38,6 +43,14 @@ func Add(b Book, bs *Books) {
 
 func (bs *Books) ToJson() []byte {
 	j, err := json.Marshal(bs)
+	if err != nil {
+		log.Println(err)
+	}
+	return j
+}
+
+func (res *Result) ToJson() []byte {
+	j, err := json.Marshal(res)
 	if err != nil {
 		log.Println(err)
 	}
